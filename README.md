@@ -15,7 +15,7 @@
 docker-compose up -d
 
 # 設定ファイルのコピー
-# TODO: add command
+docker cp ./setting/var/www/html/wp-includes/functions.php docker_x_wordpress-wordpress-1:/var/www/html/wp-includes/functions.php
 
 # 再起動
 docker-compose reset
