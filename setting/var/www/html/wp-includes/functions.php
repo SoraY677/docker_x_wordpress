@@ -5152,6 +5152,19 @@ function wp_list_sort( $list, $orderby = array(), $order = 'ASC', $preserve_keys
 	return $util->sort( $orderby, $order, $preserve_keys );
 }
 
+/**
+ * widget enable
+ */
+function my_theme_widgets_init() {
+	register_sidebar( 
+		array(
+			'name' => 'Main Sidebar',
+	  		'id' => 'main-sidebar',
+		) 
+	);
+}
+add_action( 'widgets_init', 'my_theme_widgets_init' );
+
 
 /**
  * Determines if Widgets library should be loaded.
