@@ -22,7 +22,7 @@ docker-compose reset
 
 ```
 
-# 雑知見
+# 知見
 
 [github wiki](https://github.com/SoraY677/docker_x_wordpress/wiki)
 
