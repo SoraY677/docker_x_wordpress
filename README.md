@@ -17,11 +17,13 @@ docker-compose up -d
 # 設定ファイルのコピー
 docker cp ./setting/var/www/html/wp-includes/functions.php docker_x_wordpress-wordpress-1:/var/www/html/wp-includes/functions.php
 
-# 再起動
-docker-compose reset
-
 ```
 
+## 再起動
+
+```bash
+docker-compose reset
+```
 # 知見
 
 [github wiki](https://github.com/SoraY677/docker_x_wordpress/wiki)
